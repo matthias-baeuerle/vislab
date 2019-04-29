@@ -18,8 +18,12 @@ import de.hska.iwi.vislab.lab1.example.ws.FibonacciServiceImpl;
 public class FibonacciTest {
 
 	static {
+
+		System.setProperty("com.sun.xml.ws.transport.http.HttpAdapter.dump", "true");
+		System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dumpTreshold", "999999");
+
 		// dump http on client
-		System.setProperty("com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump", "true");
+		// System.setProperty("com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump", "true");
 		// dump http on server		
 		//System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
 	}
