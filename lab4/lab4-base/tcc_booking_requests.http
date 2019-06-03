@@ -1,20 +1,20 @@
 GET http://localhost:4434/flight  HTTP/1.1
 Accept: application/xml
-
+###
 GET http://localhost:4434/hotel  HTTP/1.1
 Accept: application/xml
-
-PUT http://localhost:4434/flight/  HTTP/1.1
+###
+PUT http://localhost:4434/flight/d71c9e1d-96ba-4972-8056-59de34e7e357  HTTP/1.1
 Accept: text/plain
-
-PUT http://localhost:4434/hotel/  HTTP/1.1
-Accept: text/url
-
+###
+PUT http://localhost:4434/hotel/e1747188-7291-4173-b7a7-c40fd7a52ee2  HTTP/1.1
+Accept: text/plain
+###
 DELETE http://localhost:4434/flight/  HTTP/1.1
 Accept: text/plain
-
+###
 DELETE http://localhost:4434/hotel/  HTTP/1.1
-Accept: text/url
-
+Accept: text/plain
+###
 GET http://localhost:4434/application.wadl HTTP/1.1
 Accept: application/xml

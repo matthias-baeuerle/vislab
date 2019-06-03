@@ -15,10 +15,11 @@ public class DateUtil {
 	public static long normalize(long date) {
 		GregorianCalendar cal = new GregorianCalendar();
 		cal.setTimeInMillis(date);
-		GregorianCalendar ncal = new GregorianCalendar();
-		ncal.set(GregorianCalendar.YEAR, cal.get(GregorianCalendar.YEAR));
-		ncal.set(GregorianCalendar.DAY_OF_YEAR, cal.get(GregorianCalendar.DAY_OF_YEAR));
-		return ncal.getTimeInMillis();
+		GregorianCalendar new_cal = new GregorianCalendar();
+		new_cal.setTimeInMillis(0); // reset to the Epoch
+		new_cal.set(GregorianCalendar.YEAR, cal.get(GregorianCalendar.YEAR));
+		new_cal.set(GregorianCalendar.DAY_OF_YEAR, cal.get(GregorianCalendar.DAY_OF_YEAR));
+		return new_cal.getTimeInMillis();
 	}
 
 }
