@@ -1,7 +1,7 @@
 package tcc;
 
-import java.util.Date;
-import java.util.GregorianCalendar;
+import tcc.flight.FlightReservationDoc;
+import tcc.hotel.HotelReservationDoc;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -9,15 +9,19 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
-import tcc.flight.FlightReservationDoc;
-import tcc.hotel.HotelReservationDoc;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Simple non-transactional client. Can be used to populate the booking services
  * with some requests.
  */
 public class TestClient {
+
+	// ----------------------------------------
+	// SOLUTION TO LAB 4 IS IN AutomatedTestClient.java
+	// ----------------------------------------
+
 	public static void main(String[] args) {
 		try {
 			Client client = ClientBuilder.newClient();

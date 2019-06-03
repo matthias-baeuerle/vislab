@@ -103,6 +103,10 @@ public class FlightReservationDoc {
 		this.confirmed = confirmed;
 	}
 
+	public String getId() {
+		return url.substring(url.lastIndexOf('/') + 1);
+	}
+
 	@Override
 	public String toString() {
 		return "FlightReservationDoc [name=" + name + ", url=" + url + ", airline=" + airline + ", from=" + from

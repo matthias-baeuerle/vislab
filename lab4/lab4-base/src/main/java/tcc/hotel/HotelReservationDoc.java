@@ -81,6 +81,10 @@ public class HotelReservationDoc {
 		this.confirmed = confirmed;
 	}
 
+	public String getId() {
+		return url.substring(url.lastIndexOf('/') + 1);
+	}
+
 	@Override
 	public String toString() {
 		return "HotelReservationDoc [name=" + name + ", url=" + url + ", hotel=" + hotel + ", expires=" + expires
