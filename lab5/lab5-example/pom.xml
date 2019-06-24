@@ -12,6 +12,8 @@
     <modules>
         <module>hello-oauth-srv</module>
         <module>hello-oauth-web</module>
+        <module>fibonacci-srv</module>
+        <module>fibonacci-client</module>
     </modules>
 
     <parent>

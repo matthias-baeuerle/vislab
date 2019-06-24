@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+    <title>Fibonacci App</title>
+</head>
+<body>
+
+<h1>Fibonacci App</h1>
+
+<p th:text="${fibonacci} != null ? ${fibonacci} : 'No fibonacci yet.'"></p>
+
+<p>Press request to proceed.</p>
+
+<form>
+    <input type="submit" value="request" formaction="/client/fibonacci" formmethod="get"/>
+</form>
+
+</body>
+</html>
