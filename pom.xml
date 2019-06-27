@@ -6,6 +6,8 @@
 
     <groupId>de.hska.iwi.vislab</groupId>
     <artifactId>vislab</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>lab1/lab1-example</module>
